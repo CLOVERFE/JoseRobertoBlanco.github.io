@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jose_Roberto_Blanco_CV_Desarrollador</title>
+<meta name="description" content="CV y portafolio de Jose Roberto Blanco Pulido — Desarrollador de software multiplataforma: web, móvil, escritorio, XR y videojuegos. Veracruz, México.">
+<meta name="theme-color" content="#F2EFE7">
+<meta property="og:title" content="Jose Roberto Blanco — Desarrollador de Software">
+<meta property="og:description" content="Desarrollador de software multiplataforma: web, móvil, escritorio, XR y videojuegos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171512'/%3E%3Cpath d='M8 4h20v16l-8 8H8z' fill='%23FF4A1F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jose Roberto Blanco Pulido",
+  "jobTitle": "Software Developer",
+  "email": "mailto:elroberuwu@gmail.com",
+  "address": { "@type": "PostalAddress", "addressRegion": "Veracruz", "addressCountry": "MX" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Tecnológica del Centro de Veracruz" },
+  "sameAs": ["https://github.com/CLOVERFE", "https://www.instagram.com/el_rover_xd"],
+  "knowsAbout": ["Web Development", "Mobile Development", "Augmented Reality", "Virtual Reality", "Game Development", "Desktop Software"]
+}
+</script>
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#F2EFE7;
+  --bg-alt:#E9E4D6;
+  --paper:#F7F4EC;
+  --paper-2:#FBF7EE;
+  --ink:#171512;
+  --ink-soft:rgba(23,21,18,.68);
+  --ink-faint:rgba(23,21,18,.14);
+  --accent:#FF4A1F;
+  --accent-dark:#B43708;
+  --accent-tint:rgba(255,74,31,.10);
+  --amber-dark:#8A5A00;
+  --nav-bg:rgba(247,244,236,.86);
+  --scan:rgba(23,21,18,.028);
+  --line:2px solid var(--ink);
+  --shadow:7px 7px 0 var(--ink);
+  --font-display:'Anton', Impact, 'Arial Narrow', sans-serif;
+  --font-mono:'Space Mono', 'Courier New', monospace;
+  --font-body:system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --chamfer-outer:polygon(20px 0,100% 0,100% calc(100% - 20px),calc(100% - 20px) 100%,0 100%,0 20px);
+  --chamfer-inner:polygon(18px 0,100% 0,100% calc(100% - 18px),calc(100% - 18px) 100%,0 100%,0 18px);
+}
+/* ============ MODO NOCHE (Prey auténtico) ============ */
+html[data-theme="night"]{
+  --bg:#16130F;
+  --bg-alt:#1D1913;
+  --paper:#201B14;
+  --paper-2:#272119;
+  --ink:#F2EFE7;
+  --ink-soft:rgba(242,239,231,.66);
+  --ink-faint:rgba(242,239,231,.18);
+  --accent:#FF5A2A;
+  --accent-dark:#FF8A5C;
+  --accent-tint:rgba(255,90,42,.16);
+  --amber-dark:#E0A53A;
+  --nav-bg:rgba(22,19,15,.88);
+  --scan:rgba(242,239,231,.04);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:var(--bg)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* ============ SCANLINES / GRAIN ============ */
+.scanlines{
+  position:fixed;inset:0;z-index:200;pointer-events:none;
+  background:repeating-linear-gradient(0deg,var(--scan) 0 1px,transparent 1px 4px);
+  animation:scanDrift 9s linear infinite;
+}
+@keyframes scanDrift{from{background-position:0 0}to{background-position:0 40px}}
+
+/* ============ BOOT OVERLAY ============ */
+#boot{
+  position:fixed;inset:0;z-index:999;background:var(--ink);
+  display:grid;place-items:center;transition:opacity .35s ease;
+}
+#boot.off{opacity:0;pointer-events:none}
+.boot-inner{text-align:center;width:min(420px,80vw)}
+.boot-line{height:3px;background:var(--accent);width:0;margin:0 auto 1rem;animation:bootLine .55s cubic-bezier(.2,.9,.2,1) forwards}
+@keyframes bootLine{to{width:100%}}
+.boot-txt{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.25em;color:var(--bg);animation:bootFlicker .5s steps(2) 2}
+@keyframes bootFlicker{50%{opacity:.15}}
+
+/* ============ SKIP LINK ============ */
+.skip{position:fixed;top:-60px;left:12px;z-index:1000;background:var(--ink);color:var(--bg);font-family:var(--font-mono);font-size:.8rem;padding:.5rem 1rem;transition:top .2s}
+.skip:focus{top:12px}
+
+/* ============ NAV ============ */
+.nav{
+  position:fixed;inset:0 auto 0 0;width:238px;z-index:150;
+  background:var(--nav-bg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-right:var(--line);display:flex;flex-direction:column;padding:1.4rem 0;
+}
+.nav-logo{padding:0 1.3rem 1.1rem;border-bottom:2px solid var(--ink-faint);margin-bottom:.6rem}
+.nav-logo .lg{font-family:var(--font-display);font-size:1.5rem;letter-spacing:.04em}
+.nav-logo .lg em{color:var(--accent);font-style:normal}
+.nav-logo .sub{font-family:var(--font-mono);font-size:.62rem;color:var(--ink-soft);letter-spacing:.18em;margin-top:.15rem}
+.nav-links{display:flex;flex-direction:column;flex:1;overflow-y:auto}
+.nav a.nl{
+  position:relative;display:flex;align-items:center;gap:.3rem;
+  padding:.58rem 1.3rem;text-decoration:none;overflow:hidden;
+  font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;
+  transition:gap .18s ease, background .18s ease;
+}
+.nav a.nl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--accent);transform:scaleY(0);transform-origin:top;transition:transform .18s ease}
+.nav a.nl::after{content:'';position:absolute;inset:0;background:var(--accent-tint);transform:scaleX(0);transform-origin:left;transition:transform .2s ease;z-index:-1}
+.nav a.nl:hover,.nav a.nl[aria-current="true"]{gap:.65rem}
+.nav a.nl:hover::before,.nav a.nl[aria-current="true"]::before{transform:scaleY(1)}
+.nav a.nl:hover::after,.nav a.nl[aria-current="true"]::after{transform:scaleX(1)}
+.nav a.nl .bk{color:var(--accent);opacity:0;transition:opacity .18s ease;font-weight:700}
+.nav a.nl:hover .bk,.nav a.nl[aria-current="true"] .bk{opacity:1}
+.nav a.nl .idx{margin-left:auto;font-size:.62rem;color:var(--ink-soft)}
+.nav-foot{border-top:2px solid var(--ink-faint);padding:1rem 1.3rem 0;display:flex;gap:.6rem;flex-wrap:wrap}
+.lang-btn,.pdf-btn{
+  font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;cursor:pointer;
+  border:var(--line);background:var(--paper);color:var(--ink);padding:.45rem .8rem;
+  box-shadow:4px 4px 0 var(--ink);transition:transform .12s ease, box-shadow .12s ease;
+  position:relative;overflow:hidden;display:inline-block;text-decoration:none;text-align:center;
+}
+.lang-btn:hover,.pdf-btn:hover{background:var(--accent-tint)}
+.lang-btn:active,.pdf-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink)}
+
+/* ============ LAYOUT ============ */
+main{margin-left:238px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.sec{border-top:var(--line);padding:3.6rem 0;scroll-margin-top:20px}
+.sec-head{display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.sec-num{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--ink)}
+.sec-slashes{font-family:var(--font-display);font-size:clamp(1.6rem,3vw,2.2rem);color:var(--accent)}
+.sec-title{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.1rem);letter-spacing:.02em;text-transform:uppercase;line-height:1}
+.sec-read{margin-left:auto;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.14em;color:var(--ink-soft)}
+
+/* ============ REVEAL (power-on) ============ */
+.reveal{opacity:0;transform:translateY(18px)}
+.reveal.on{animation:powerOn .55s cubic-bezier(.2,.7,.3,1) both;animation-delay:var(--d,0s)}
+@keyframes powerOn{
+  0%{opacity:0;transform:translateY(18px);filter:brightness(1.7) contrast(1.15)}
+  22%{opacity:.95}
+  34%{opacity:.3}
+  48%{opacity:1}
+  62%{opacity:.55}
+  100%{opacity:1;transform:translateY(0);filter:none}
+}
+
+/* ============ GLITCH ============ */
+.glitch{position:relative;display:inline-block}
+.glitch::before,.glitch::after{
+  content:attr(data-text);position:absolute;left:0;top:0;width:100%;height:100%;
+  opacity:0;pointer-events:none;white-space:nowrap;
+}
+.glitch:hover::before{opacity:.85;color:var(--accent);animation:glA .36s steps(2,end) both}
+.glitch:hover::after{opacity:.85;color:var(--amber-dark);animation:glB .36s steps(2,end) both}
+@keyframes glA{
+  0%{transform:translate(-4px,2px);clip-path:inset(10% 0 60% 0)}
+  25%{transform:translate(3px,-2px);clip-path:inset(50% 0 20% 0)}
+  50%{transform:translate(-3px,1px);clip-path:inset(30% 0 42% 0)}
+  75%{transform:translate(4px,-1px);clip-path:inset(62% 0 8% 0)}
+  100%{transform:translate(0);clip-path:inset(0 0 100% 0)}
+}
+@keyframes glB{
+  0%{transform:translate(4px,-2px);clip-path:inset(60% 0 12% 0)}
+  25%{transform:translate(-3px,2px);clip-path:inset(18% 0 52% 0)}
+  50%{transform:translate(3px,-1px);clip-path:inset(44% 0 28% 0)}
+  75%{transform:translate(-4px,1px);clip-path:inset(6% 0 66% 0)}
+  100%{transform:translate(0);clip-path:inset(0 0 100% 0)}
+}
+
+/* ============ HERO ============ */
+.hero{min-height:100svh;display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(1.5rem,4vw,3rem);align-items:center;padding:2.5rem clamp(1rem,4vw,2.5rem) 3rem;position:relative}
+.hero-coords{position:absolute;top:1.2rem;right:0;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.16em;color:var(--ink-soft);text-align:right;line-height:1.9}
+.kicker{font-family:var(--font-mono);font-size:clamp(.78rem,1.6vw,.95rem);letter-spacing:.2em;color:var(--accent-dark);font-weight:700;text-transform:uppercase}
+.cursor{display:inline-block;width:.55em;height:1em;background:var(--accent);margin-left:.3em;vertical-align:-.12em;animation:blink 1.05s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+h1.name{margin:.6rem 0 .9rem;text-transform:uppercase}
+h1.name .l1,h1.name .l2{display:block;font-family:var(--font-display);font-size:clamp(2.8rem,6.8vw,6rem);line-height:.93;letter-spacing:.015em;white-space:nowrap}
+h1.name .l2{color:transparent;-webkit-text-stroke:2.5px var(--ink);transition:color .2s ease}
+h1.name .l2:hover{color:var(--accent-tint)}
+.role-line{font-family:var(--font-mono);font-size:clamp(.95rem,2.2vw,1.3rem);letter-spacing:.1em;font-weight:700;display:flex;align-items:baseline;gap:.6rem;min-height:1.8em}
+.role-line .arrow{color:var(--accent)}
+#roleWord{color:var(--ink);border-bottom:3px solid var(--accent)}
+.role-static{display:none}
+.chips{display:flex;gap:.7rem;flex-wrap:wrap;margin:1.4rem 0 1.8rem}
+.chip{border:var(--line);background:var(--paper);box-shadow:4px 4px 0 var(--ink);padding:.45rem .8rem;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;display:flex;gap:.55rem;align-items:center}
+.chip .ck{color:var(--ink-soft)}
+.chip .cv{font-weight:700}
+.chip .cv.ok{color:var(--accent-dark)}
+.chip .cv.ok::before{content:'●';color:var(--accent);margin-right:.4em;animation:blink 1.6s steps(1) infinite}
+.cta-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{
+  display:inline-block;font-family:var(--font-mono);font-weight:700;font-size:.85rem;letter-spacing:.1em;
+  text-decoration:none;color:var(--ink);background:var(--paper);border:var(--line);
+  padding:.85rem 1.5rem;box-shadow:6px 6px 0 var(--ink);cursor:pointer;
+  position:relative;overflow:hidden;transition:transform .12s ease, box-shadow .12s ease, color .18s ease;
+}
+.btn::before{content:'';position:absolute;inset:0;background:var(--accent);transform:translateX(-102%);transition:transform .22s cubic-bezier(.2,.8,.2,1);z-index:0}
+.btn:hover::before{transform:translateX(0)}
+.btn span{position:relative;z-index:1}
+.btn:active{transform:translate(6px,6px);box-shadow:0 0 0 var(--ink)}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn.solid:hover{color:var(--bg)}
+
+/* Avatar frame (chamfered) */
+.hero-visual{display:flex;flex-direction:column;gap:.8rem}
+.frame{filter:drop-shadow(7px 7px 0 var(--ink));transition:filter .2s ease}
+.frame:hover{filter:drop-shadow(10px 10px 0 var(--ink))}
+.frame-border{background:var(--ink);clip-path:var(--chamfer-outer);padding:2.5px}
+.frame-core{background:var(--paper);clip-path:var(--chamfer-inner);position:relative;overflow:hidden}
+.avatar{display:block;width:100%;height:auto;transition:transform .35s ease}
+.frame:hover .avatar{transform:scale(1.03)}
+.hud{position:absolute;font-family:var(--font-mono);font-size:.58rem;letter-spacing:.14em;color:rgba(23,21,18,.55);z-index:7;pointer-events:none}
+.hud-tl{top:12px;left:14px}
+.hud-tr{top:12px;right:14px;color:var(--accent-dark);font-weight:700}
+.hud-bl{bottom:12px;left:14px;color:rgba(247,244,236,.6)}
+.photo-fx{position:absolute;inset:0;z-index:6;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(23,21,18,.05) 0 1px,transparent 1px 4px)}
+.avatar-reads{display:flex;justify-content:space-between;gap:.6rem;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;color:var(--ink-soft);border:var(--line);background:var(--paper);box-shadow:4px 4px 0 var(--ink);padding:.5rem .8rem}
+.avatar-reads b{color:var(--accent-dark)}
+
+/* ============ PERFIL ============ */
+.profile-txt{font-size:clamp(1.05rem,2vw,1.3rem);line-height:1.75;max-width:62ch}
+.profile-txt strong{background:linear-gradient(transparent 62%, var(--accent-tint) 62%);box-shadow:inset 0 -2px 0 var(--accent)}
+.profile-meta{margin-top:1.6rem;display:flex;gap:.7rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em}
+.profile-meta span{border:var(--line);background:var(--paper);box-shadow:3px 3px 0 var(--ink);padding:.35rem .7rem}
+
+/* ============ STACK MARQUEE ============ */
+.marquee{border:var(--line);background:var(--ink);color:var(--bg);overflow:hidden;box-shadow:var(--shadow)}
+.marquee-track{display:flex;width:max-content;animation:mq 22s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq-list{display:flex;align-items:center;list-style:none}
+.mq-list li{font-family:var(--font-display);font-size:clamp(1.15rem,2.6vw,1.7rem);letter-spacing:.06em;padding:.75rem 1.1rem;white-space:nowrap;transition:color .15s ease}
+.mq-list li:hover{color:var(--accent)}
+.mq-list li::after{content:'▸';color:var(--accent);margin-left:2.2rem;font-size:.8em}
+
+/* ============ EXPERIENCIA (mission log) ============ */
+.xp-list{display:flex;flex-direction:column}
+.xp{display:grid;grid-template-columns:38px 1fr;position:relative}
+.xp-rail{position:relative}
+.xp-rail::after{content:'';position:absolute;left:15px;top:34px;bottom:-6px;width:2px;background:var(--ink-faint)}
+.xp:last-child .xp-rail::after{display:none}
+.xp-marker{font-family:var(--font-mono);font-weight:700;font-size:1.15rem;color:var(--ink);position:relative;z-index:1;background:var(--bg);padding:2px 0;transition:color .18s ease,transform .18s ease}
+.xp:hover .xp-marker{color:var(--accent);transform:translateX(3px)}
+.xp-body{border:var(--line);background:var(--paper);box-shadow:var(--shadow);padding:1.3rem 1.5rem;margin-bottom:1.6rem;transition:transform .18s ease, box-shadow .18s ease}
+.xp:hover .xp-body{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--ink)}
+.xp-top{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap;margin-bottom:.2rem}
+.xp-role{font-size:1.12rem;font-weight:800}
+.xp-dom{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;color:var(--accent-dark);border:1.5px solid var(--accent-dark);padding:.15rem .5rem;margin-left:auto;white-space:nowrap}
+.xp-org{font-family:var(--font-mono);font-size:.76rem;letter-spacing:.08em;color:var(--ink-soft);margin-bottom:.8rem}
+.xp-body ul{list-style:none}
+.xp-body li{padding-left:1.4rem;position:relative;margin-bottom:.45rem;font-size:.98rem}
+.xp-body li::before{content:'▸';position:absolute;left:0;color:var(--accent);font-weight:700}
+.xp-body li:last-child{margin-bottom:0}
+
+/* ============ PROYECTOS ============ */
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2rem}
+.proj-card .frame-core{padding:1.5rem 1.6rem 1.4rem;min-height:100%;transition:transform .18s ease}
+.proj-card:hover .frame-core{transform:translateY(-3px)}
+.frame-core::after{
+  content:'';position:absolute;left:0;right:0;top:-12%;height:3px;opacity:0;z-index:5;
+  background:linear-gradient(90deg,transparent,var(--accent) 30%,var(--accent) 70%,transparent);
+  pointer-events:none;
+}
+.frame:hover .frame-core::after{animation:sweep .75s ease both}
+@keyframes sweep{0%{top:-12%;opacity:0}12%{opacity:1}88%{opacity:1}100%{top:108%;opacity:0}}
+.cnr{position:absolute;width:13px;height:13px;z-index:6;transition:width .2s ease,height .2s ease,border-color .2s ease;pointer-events:none}
+.cnr.tl{top:8px;left:8px;border-top:2.5px solid var(--ink);border-left:2.5px solid var(--ink)}
+.cnr.tr{top:8px;right:8px;border-top:2.5px solid var(--ink);border-right:2.5px solid var(--ink)}
+.cnr.bl{bottom:8px;left:8px;border-bottom:2.5px solid var(--ink);border-left:2.5px solid var(--ink)}
+.cnr.br{bottom:8px;right:8px;border-bottom:2.5px solid var(--ink);border-right:2.5px solid var(--ink)}
+.proj-card:hover .cnr{width:22px;height:22px;border-color:var(--accent)}
+.proj-top{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap;margin-bottom:.35rem}
+.proj-name{font-family:var(--font-display);font-size:1.55rem;letter-spacing:.03em;text-transform:uppercase}
+.proj-status{font-family:var(--font-mono);font-size:.6rem;letter-spacing:.12em;color:var(--accent-dark);border:1.5px solid var(--accent-dark);padding:.15rem .5rem;margin-left:auto;white-space:nowrap}
+.proj-tag{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em;color:var(--amber-dark);font-weight:700;margin-bottom:.7rem}
+.proj-desc{font-size:.97rem;margin-bottom:1rem}
+.proj-tags{display:flex;gap:.5rem;flex-wrap:wrap;font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em}
+.proj-tags span{background:var(--ink);color:var(--bg);padding:.22rem .55rem}
+
+/* --- Galería expandible estilo Steam --- */
+.proj-card .frame-core{cursor:pointer}
+.proj-more{
+  margin-top:1rem;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.12em;font-weight:700;
+  color:var(--accent-dark);background:none;border:none;cursor:pointer;padding:.2rem 0;
+  position:relative;display:inline-block;text-align:left;
+}
+.proj-more .pm-a{white-space:nowrap}
+.proj-more .pm-b{position:absolute;left:0;top:.2rem;opacity:0;white-space:nowrap}
+.proj-card.open .pm-a{opacity:0}
+.proj-card.open .pm-b{opacity:1;animation:bootFlicker .4s steps(2) 1}
+.proj-more::after{content:'';position:absolute;left:0;bottom:0;height:1.5px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.proj-more:hover::after{transform:scaleX(1)}
+.proj-gallery{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s cubic-bezier(.2,.8,.2,1)}
+.pg-wrap{overflow:hidden;min-height:0}
+.pg-grid{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;padding-top:1rem;opacity:0;transform:translateY(10px);transition:opacity .3s ease .12s,transform .3s ease .12s}
+.proj-card.open .proj-gallery{grid-template-rows:1fr}
+.proj-card.open .pg-grid{opacity:1;transform:none}
+.pg-grid img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;border:var(--line);box-shadow:4px 4px 0 var(--ink);background:var(--bg-alt);transition:transform .25s ease}
+.pg-grid img:hover{transform:scale(1.02)}
+@media (min-width:641px){.proj-card.open{grid-column:1/-1}}
+@media (max-width:640px){.pg-grid{grid-template-columns:1fr}}
+
+/* --- Flash de cambio de tema --- */
+.theme-flash{position:fixed;inset:0;background:var(--ink);opacity:.85;z-index:998;pointer-events:none;animation:tflash .34s steps(4) forwards}
+@keyframes tflash{to{opacity:0}}
+
+/* ============ MÓDULOS (Neuromod) ============ */
+.mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.mod{border:var(--line);background:var(--paper);box-shadow:5px 5px 0 var(--ink);padding:1.1rem 1.2rem;transition:transform .16s ease, box-shadow .16s ease, background .16s ease}
+.mod:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink);background:var(--paper-2)}
+.mod-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem}
+.mod-node{width:13px;height:13px;border-radius:50%;background:var(--ink);flex:none;transition:background .16s ease}
+.mod:hover .mod-node{background:var(--accent);animation:pulse 1s ease infinite}
+@keyframes pulse{50%{transform:scale(1.35)}}
+.mod-line{flex:1;height:2px;background:var(--ink-faint);position:relative;overflow:hidden}
+.mod-line::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,var(--accent),var(--accent));transform:translateX(-101%);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.mod:hover .mod-line::after{transform:translateX(0)}
+.mod-st{font-family:var(--font-mono);font-size:.58rem;letter-spacing:.14em;position:relative;width:74px;height:1.1em;text-align:right;flex:none}
+.mod-st .st-a,.mod-st .st-b{position:absolute;right:0;top:0;transition:opacity .2s ease}
+.mod-st .st-a{color:var(--ink-soft);opacity:1}
+.mod-st .st-b{color:var(--accent-dark);font-weight:700;opacity:0}
+.mod:hover .st-a{opacity:0}
+.mod:hover .st-b{opacity:1;animation:bootFlicker .4s steps(2) 1}
+.mod-name{font-weight:800;font-size:1.02rem;margin-bottom:.25rem}
+.mod-desc{font-size:.88rem;color:var(--ink-soft)}
+
+/* ============ EDUCACIÓN ============ */
+.edu-panel{border:var(--line);background:var(--paper);box-shadow:var(--shadow);padding:1.4rem 1.6rem;display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
+.edu-deg{font-weight:800;font-size:1.12rem}
+.edu-school{font-family:var(--font-mono);font-size:.76rem;letter-spacing:.08em;color:var(--ink-soft)}
+.edu-status{font-family:var(--font-mono);font-size:.62rem;letter-spacing:.12em;color:var(--accent-dark);border:1.5px solid var(--accent-dark);padding:.2rem .6rem;margin-left:auto;white-space:nowrap}
+
+/* ============ CONTACTO ============ */
+.contact-core{padding:3rem clamp(1.4rem,5vw,3.5rem);text-align:center}
+.contact-title{font-family:var(--font-display);font-size:clamp(2.2rem,6vw,4.2rem);text-transform:uppercase;line-height:1;margin-bottom:.9rem}
+.contact-sub{max-width:52ch;margin:0 auto 1.8rem;font-size:1.02rem;color:var(--ink-soft)}
+.mail-link{display:inline-block;font-family:var(--font-mono);font-weight:700;font-size:clamp(1rem,3.2vw,1.6rem);letter-spacing:.04em;text-decoration:none;border-bottom:3px solid var(--accent);padding-bottom:.15rem;margin-bottom:2rem;transition:color .18s ease}
+.mail-link:hover{color:var(--accent-dark)}
+.contact-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.print-only{display:none}
+
+/* ============ FOOTER ============ */
+footer{border-top:var(--line);padding:1.4rem 0 2rem;font-family:var(--font-mono);font-size:.68rem;letter-spacing:.1em;color:var(--ink-soft)}
+footer .wrap{display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:1020px){
+  .mod-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .nav{inset:0 0 auto 0;width:auto;height:58px;flex-direction:row;align-items:center;border-right:0;border-bottom:var(--line);padding:0 .8rem;gap:.2rem}
+  .nav-logo{border:0;padding:0 .6rem 0 0;margin:0;flex:none}
+  .nav-logo .sub{display:none}
+  .nav-links{flex-direction:row;overflow-x:auto;overflow-y:hidden;scrollbar-width:none}
+  .nav-links::-webkit-scrollbar{display:none}
+  .nav a.nl{padding:.5rem .55rem;font-size:.7rem;flex:none}
+  .nav a.nl .idx,.nav a.nl .bk{display:none}
+  .nav a.nl::before{top:auto;right:0;height:3px;width:auto;transform:scaleX(0);transform-origin:left}
+  .nav a.nl:hover::before,.nav a.nl[aria-current="true"]::before{transform:scaleX(1)}
+  .nav-foot{border:0;padding:0 0 0 .4rem;margin-left:auto;flex:none}
+  .pdf-btn{display:none}
+  main{margin-left:0;padding-top:58px}
+  .sec{scroll-margin-top:70px}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:2rem}
+  .hero-coords{display:none}
+  .hero-visual{max-width:340px}
+  .sec-read{display:none}
+}
+@media (max-width:640px){
+  .proj-grid{grid-template-columns:1fr}
+  .mod-grid{grid-template-columns:1fr}
+  .xp-dom{margin-left:0}
+  .edu-status{margin-left:0}
+}
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s !important;animation-iteration-count:1 !important;transition-duration:.001s !important}
+  .marquee-track{animation:none}
+  .reveal{opacity:1;transform:none}
+  #boot{display:none}
+}
+
+/* ============ PRINT ============ */
+@media print{
+  @page{margin:13mm}
+  :root{--bg:#fff;--paper:#fff}
+  html[data-theme="night"]{
+    --bg:#fff;--bg-alt:#fff;--paper:#fff;--paper-2:#fff;--ink:#171512;
+    --ink-soft:rgba(23,21,18,.68);--ink-faint:rgba(23,21,18,.14);
+    --accent:#FF4A1F;--accent-dark:#B43708;--amber-dark:#8A5A00;
+    --accent-tint:rgba(255,74,31,.10);--nav-bg:rgba(247,244,236,.86);--scan:transparent;
+  }
+  body{background:#fff;font-size:10.5pt;line-height:1.45}
+  .scanlines,#boot,.nav,.marquee,.no-print,.cta-row,.sec-read,.hero-coords,.cursor,.avatar-reads,.hud,.photo-fx,.proj-more,.proj-gallery,.theme-flash{display:none !important}
+  *,*::before,*::after{animation:none !important;transition:none !important;box-shadow:none !important;filter:none !important}
+  .reveal{opacity:1 !important;transform:none !important}
+  main{margin:0;padding:0}
+  .wrap{max-width:100%;padding:0}
+  .hero{display:block;min-height:0;padding:0 0 6pt;position:relative;padding-right:85pt}
+  .hero-visual{position:absolute;top:0;right:0;width:70pt}
+  h1.name .l1,h1.name .l2{font-size:26pt;line-height:1;-webkit-text-stroke:0;color:#000}
+  .kicker{font-size:8.5pt}
+  .role-line{min-height:0;font-size:10pt}
+  #roleWord{display:none}
+  .role-static{display:inline;font-weight:700}
+  .chips{margin:.5rem 0 0}
+  .chip{box-shadow:none;border:1pt solid #000;padding:.15rem .4rem;font-size:7.5pt}
+  .sec{border-top:1.5pt solid #000;padding:8pt 0;page-break-inside:avoid}
+  .sec-head{margin-bottom:6pt;gap:.5rem}
+  .sec-num,.sec-slashes{font-size:12pt}
+  .sec-title{font-size:14pt}
+  .profile-txt{font-size:10.5pt}
+  .profile-meta span{box-shadow:none;border:1pt solid #000}
+  .xp-body,.edu-panel{box-shadow:none;border:1pt solid #000;margin-bottom:6pt;padding:6pt 8pt}
+  .xp:hover .xp-body{transform:none}
+  .xp-rail::after{display:none}
+  .proj-grid{grid-template-columns:1fr 1fr;gap:8pt}
+  .frame{filter:none}
+  .frame-border{clip-path:none;padding:1pt;background:#000}
+  .frame-core{clip-path:none;padding:6pt 8pt}
+  .proj-card:hover .frame-core{transform:none}
+  .cnr,.frame-core::after{display:none}
+  .mod-grid{grid-template-columns:1fr 1fr 1fr;gap:6pt}
+  .mod{box-shadow:none;border:1pt solid #000;padding:5pt 7pt;page-break-inside:avoid}
+  .mod-line,.mod-st{display:none}
+  .mod-desc{font-size:8.5pt}
+  .mail-link{font-size:11pt;border-bottom:1.5pt solid #000}
+  .print-only{display:block}
+  .contact-core{padding:8pt}
+  .contact-title{font-size:16pt;margin-bottom:4pt}
+  p.print-only{font-family:var(--font-mono);font-size:8pt;letter-spacing:.05em;margin-top:4pt}
+  .print-links{font-family:var(--font-mono);font-size:8pt;margin-top:6pt}
+  footer{border-top:1pt solid #000;padding-top:6pt}
+  a{text-decoration:none}
+}
+</style>
+</head>
+<body>
+
+<div id="boot" aria-hidden="true">
+  <div class="boot-inner">
+    <div class="boot-line"></div>
+    <div class="boot-txt" id="bootTxt">INICIANDO SISTEMA_</div>
+  </div>
+</div>
+
+<div class="scanlines" aria-hidden="true"></div>
+<a class="skip" href="#perfil" data-i18n="skip">Saltar al contenido</a>
+
+<!-- ============ NAV ============ -->
+<nav class="nav" aria-label="Principal">
+  <div class="nav-logo">
+    <div class="lg">JRBP<em>//</em></div>
+    <div class="sub">SYS.VER 2.6.0 — DEV</div>
+  </div>
+  <div class="nav-links">
+    <a class="nl" href="#inicio"><span class="bk">[</span><span class="lb" data-i18n="nav.home">INICIO</span><span class="bk">]</span><span class="idx">00</span></a>
+    <a class="nl" href="#perfil"><span class="bk">[</span><span class="lb" data-i18n="nav.profile">PERFIL</span><span class="bk">]</span><span class="idx">01</span></a>
+    <a class="nl" href="#stack"><span class="bk">[</span><span class="lb" data-i18n="nav.stack">STACK</span><span class="bk">]</span><span class="idx">02</span></a>
+    <a class="nl" href="#experiencia"><span class="bk">[</span><span class="lb" data-i18n="nav.exp">EXPERIENCIA</span><span class="bk">]</span><span class="idx">03</span></a>
+    <a class="nl" href="#proyectos"><span class="bk">[</span><span class="lb" data-i18n="nav.proj">PROYECTOS</span><span class="bk">]</span><span class="idx">04</span></a>
+    <a class="nl" href="#modulos"><span class="bk">[</span><span class="lb" data-i18n="nav.mods">MÓDULOS</span><span class="bk">]</span><span class="idx">05</span></a>
+    <a class="nl" href="#educacion"><span class="bk">[</span><span class="lb" data-i18n="nav.edu">EDUCACIÓN</span><span class="bk">]</span><span class="idx">06</span></a>
+    <a class="nl" href="#contacto"><span class="bk">[</span><span class="lb" data-i18n="nav.contact">CONTACTO</span><span class="bk">]</span><span class="idx">07</span></a>
+  </div>
+  <div class="nav-foot">
+    <button class="lang-btn" id="langToggle" aria-label="Cambiar idioma / Switch language">EN</button>
+    <button class="lang-btn" id="themeToggle" aria-label="Cambiar tema / Toggle theme">☾ NOCHE</button>
+    <a class="pdf-btn" href="Jose_Roberto_Blanco_CV.pdf" download data-i18n="btn.pdf">DESCARGAR CV</a>
+  </div>
+</nav>
+
+<main>
+  <!-- ============ 00 HERO ============ -->
+  <section class="hero wrap" id="inicio">
+    <div class="hero-coords" aria-hidden="true">LAT 19.54°N — LON 96.91°W<br>VERACRUZ, MX — UTC-6</div>
+    <div>
+      <p class="kicker"><span data-i18n="hero.kicker">Desarrollador de Software</span><span class="cursor" aria-hidden="true"></span></p>
+      <h1 class="name">
+        <span class="l1 glitch" data-text="JOSE ROBERTO">JOSE ROBERTO</span>
+        <span class="l2">BLANCO PULIDO</span>
+      </h1>
+      <p class="role-line"><span class="arrow" aria-hidden="true">▸</span> <span id="roleWord">WEB</span><span class="role-static print-only" data-i18n="hero.rolestatic">WEB · MÓVIL · ESCRITORIO · XR · VIDEOJUEGOS</span></p>
+      <div class="chips">
+        <div class="chip"><span class="ck" data-i18n="hero.c1k">STATUS</span><strong class="cv ok" data-i18n="hero.c1v">DISPONIBLE</strong></div>
+        <div class="chip"><span class="ck" data-i18n="hero.c2k">BASE</span><strong class="cv">VERACRUZ, MX</strong></div>
+        <div class="chip"><span class="ck" data-i18n="hero.c3k">EXP</span><strong class="cv" data-i18n="hero.c3v">2+ AÑOS</strong></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn solid" href="#contacto"><span data-i18n="hero.cta1">INICIAR CONTACTO</span></a>
+        <a class="btn" href="#proyectos"><span data-i18n="hero.cta2">VER PROYECTOS</span></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="frame">
+        <div class="frame-border">
+          <div class="frame-core">
+            <img class="avatar" src="foto-web.jpg" alt="Retrato de Jose Roberto Blanco Pulido" width="520" height="650" loading="eager">
+            <span class="hud hud-tl" aria-hidden="true">SUBJ.001 // JRBP</span>
+            <span class="hud hud-tr" aria-hidden="true">●REC</span>
+            <span class="hud hud-bl" aria-hidden="true">RENDER.OK — 60FPS</span>
+            <span class="photo-fx" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+      <div class="avatar-reads" aria-hidden="true">
+        <span>ID: <b>JRBP-2604</b></span>
+        <span data-i18n="hero.av1">CLASE: <b>DEV</b></span>
+        <span>NEUROMODS: <b>6</b></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 01 PERFIL ============ -->
+  <section class="sec" id="perfil">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">01</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="PERFIL" data-i18n="s1.title">PERFIL</h2>
+        <span class="sec-read" data-i18n="s1.read">// QUIÉN_SOY</span>
+      </header>
+      <p class="profile-txt reveal" style="--d:.08s" data-i18n="profile.p1">Desarrollador de software con más de 2 años construyendo productos que cruzan fronteras de plataforma: <strong>aplicaciones web, apps móviles de realidad aumentada, software de escritorio, videojuegos y laboratorios virtuales</strong>. Convierto problemas complejos —desde fórmulas de física hasta procesos de negocio— en herramientas digitales que funcionan. Lideré el desarrollo de una app AR para agricultura y hoy construyo experiencias de aprendizaje en realidad extendida.</p>
+      <div class="profile-meta reveal" style="--d:.16s">
+        <span data-i18n="profile.m1">▸ ING. ENTORNOS VIRTUALES</span>
+        <span data-i18n="profile.m2">▸ MULTIPLATAFORMA</span>
+        <span data-i18n="profile.m3">▸ XR / AR / VR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 STACK ============ -->
+  <section class="sec" id="stack">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">02</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="STACK" data-i18n="s2.title">STACK</h2>
+        <span class="sec-read" data-i18n="s2.read">// CARGA_TÉCNICA</span>
+      </header>
+      <div class="marquee reveal no-print" style="--d:.08s">
+        <div class="marquee-track">
+          <ul class="mq-list">
+            <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>TYPESCRIPT</li><li>C#</li><li>UNITY</li><li>KOTLIN</li><li>FLUTTER</li><li>ARCORE</li><li>OPENXR</li><li>PYTHON</li><li>GIT</li><li>OPENCODE</li><li>K3</li>
+          </ul>
+          <ul class="mq-list" aria-hidden="true">
+            <li>HTML</li><li>CSS</li><li>JAVASCRIPT</li><li>TYPESCRIPT</li><li>C#</li><li>UNITY</li><li>KOTLIN</li><li>FLUTTER</li><li>ARCORE</li><li>OPENXR</li><li>PYTHON</li><li>GIT</li><li>OPENCODE</li><li>K3</li>
+          </ul>
+        </div>
+      </div>
+      <p class="print-only">STACK: HTML · CSS · JAVASCRIPT · TYPESCRIPT · C# · UNITY · KOTLIN · FLUTTER · ARCORE · OPENXR · PYTHON · GIT · OPENCODE · K3</p>
+    </div>
+  </section>
+
+  <!-- ============ 03 EXPERIENCIA ============ -->
+  <section class="sec" id="experiencia">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">03</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="EXPERIENCIA" data-i18n="s3.title">EXPERIENCIA</h2>
+        <span class="sec-read" data-i18n="s3.read">// REGISTRO_MISIONES</span>
+      </header>
+      <div class="xp-list">
+        <article class="xp reveal" style="--d:.05s">
+          <div class="xp-rail"><span class="xp-marker">▸</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <h3 class="xp-role" data-i18n="x1.role">Desarrollador Principal — CultivAR</h3>
+              <span class="xp-dom" data-i18n="x1.dom">DOMINIO ▸ MÓVIL / AR</span>
+            </div>
+            <p class="xp-org">Artizan · 2023</p>
+            <ul>
+              <li data-i18n="x1.b1">Lideré de punta a punta el desarrollo de una app móvil de realidad aumentada para el cuidado de cultivos de tomate.</li>
+              <li data-i18n="x1.b2">Diseñé la experiencia AR completa: detección de la planta, visualización de datos de cuidado e interfaz de usuario.</li>
+              <li data-i18n="x1.b3">Tomé las decisiones técnicas del proyecto como desarrollador principal.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="xp reveal" style="--d:.12s">
+          <div class="xp-rail"><span class="xp-marker">▸</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <h3 class="xp-role" data-i18n="x2.role">Colaborador de Digitalización de Cobro</h3>
+              <span class="xp-dom" data-i18n="x2.dom">DOMINIO ▸ PROCESOS / DIGITALIZACIÓN</span>
+            </div>
+            <p class="xp-org">Servicios de Agua Homex · 2024</p>
+            <ul>
+              <li data-i18n="x2.b1">Ejecuté en campo la transición del cobro físico al digital durante la modernización del servicio de agua.</li>
+              <li data-i18n="x2.b2">Operé como persona de confianza responsable del manejo de dinero físico.</li>
+              <li data-i18n="x2.b3">Acompañé a los usuarios en la adopción del nuevo sistema de cobro digital.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="xp reveal" style="--d:.19s">
+          <div class="xp-rail"><span class="xp-marker">▸</span></div>
+          <div class="xp-body">
+            <div class="xp-top">
+              <h3 class="xp-role" data-i18n="x3.role">Desarrollador e Investigador — Laboratorio de Física XR</h3>
+              <span class="xp-dom" data-i18n="x3.dom">DOMINIO ▸ XR / EDUCACIÓN</span>
+            </div>
+            <p class="xp-org">Grupo Ziram · 2025 — 2026</p>
+            <ul>
+              <li data-i18n="x3.b1">Traduzco fórmulas y conceptos de física a experimentos interactivos para un laboratorio virtual.</li>
+              <li data-i18n="x3.b2">Desarrollo experiencias de aprendizaje empírico con gafas de realidad extendida.</li>
+              <li data-i18n="x3.b3">Investigo, prototipo y documento nuevas simulaciones educativas.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 PROYECTOS ============ -->
+  <section class="sec" id="proyectos">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">04</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="PROYECTOS" data-i18n="s4.title">PROYECTOS</h2>
+        <span class="sec-read" data-i18n="s4.read">// ARCHIVOS</span>
+      </header>
+      <div class="proj-grid">
+        <div class="proj-card frame reveal" style="--d:.05s">
+          <div class="frame-border">
+            <div class="frame-core">
+              <span class="cnr tl"></span><span class="cnr tr"></span><span class="cnr bl"></span><span class="cnr br"></span>
+              <div class="proj-top">
+                <h3 class="proj-name">CultivAR</h3>
+                <span class="proj-status" data-i18n="p1.status">COMPLETADO</span>
+              </div>
+              <p class="proj-tag" data-i18n="p1.tag">APP MÓVIL AR · AGRICULTURA</p>
+              <p class="proj-desc" data-i18n="p1.desc">Realidad aumentada que asiste en el cuidado de plantas de tomate: detecta la planta y despliega información contextual de cuidado en pantalla.</p>
+              <div class="proj-tags"><span>UNITY</span><span>C#</span><span>ARCORE</span><span>ANDROID</span></div>
+              <button class="proj-more" aria-expanded="false" aria-controls="gal-p1"><span class="pm-a" data-i18n="proj.more">+ CAPTURAS</span><span class="pm-b" data-i18n="proj.less">− CERRAR</span></button>
+              <div class="proj-gallery" id="gal-p1">
+                <div class="pg-wrap">
+                  <div class="pg-grid">
+                    <img src="cultivar-1.jpg" alt="CultivAR corriendo en un teléfono: menú principal de la app" loading="lazy" width="800" height="500">
+                    <img src="cultivar-2.jpg" alt="Proyecto CultivAR en el editor de Unity" loading="lazy" width="800" height="500">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card frame reveal" style="--d:.14s">
+          <div class="frame-border">
+            <div class="frame-core">
+              <span class="cnr tl"></span><span class="cnr tr"></span><span class="cnr bl"></span><span class="cnr br"></span>
+              <div class="proj-top">
+                <h3 class="proj-name" data-i18n="p2.name">Laboratorio de Física XR</h3>
+                <span class="proj-status" data-i18n="p2.status">EN DESARROLLO</span>
+              </div>
+              <p class="proj-tag" data-i18n="p2.tag">LABORATORIO VIRTUAL · EDUCACIÓN</p>
+              <p class="proj-desc" data-i18n="p2.desc">Laboratorio virtual donde las fórmulas se convierten en experimentos interactivos: los alumnos aprenden física de forma empírica con gafas de realidad extendida.</p>
+              <div class="proj-tags"><span>UNITY</span><span>XR</span><span>OPENXR</span><span data-i18n="p2.t4">SIMULACIÓN</span></div>
+              <button class="proj-more" aria-expanded="false" aria-controls="gal-p2"><span class="pm-a" data-i18n="proj.more">+ CAPTURAS</span><span class="pm-b" data-i18n="proj.less">− CERRAR</span></button>
+              <div class="proj-gallery" id="gal-p2">
+                <div class="pg-wrap">
+                  <div class="pg-grid">
+                    <img src="vpl-1.jpg" alt="Interior del laboratorio virtual de física" loading="lazy" width="800" height="500">
+                    <img src="vpl-2.jpg" alt="Laboratorio virtual con ventana hacia el espacio" loading="lazy" width="800" height="500">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card frame reveal" style="--d:.19s">
+          <div class="frame-border">
+            <div class="frame-core">
+              <span class="cnr tl"></span><span class="cnr tr"></span><span class="cnr bl"></span><span class="cnr br"></span>
+              <div class="proj-top">
+                <h3 class="proj-name" data-i18n="p3.name">Artizan Legacy</h3>
+                <span class="proj-status" data-i18n="p3.status">COMPLETADO</span>
+              </div>
+              <p class="proj-tag" data-i18n="p3.tag">APP VR · HISTORIA</p>
+              <p class="proj-desc" data-i18n="p3.desc">Aplicación de realidad virtual para conversar con figuras históricas, conocer su entorno y sus obras. Exhibida en la UTCV en 2024.</p>
+              <div class="proj-tags"><span>UNITY</span><span>C#</span><span>VR</span><span data-i18n="p3.t4">NARRATIVA</span></div>
+              <button class="proj-more" aria-expanded="false" aria-controls="gal-p3"><span class="pm-a" data-i18n="proj.more">+ CAPTURAS</span><span class="pm-b" data-i18n="proj.less">− CERRAR</span></button>
+              <div class="proj-gallery" id="gal-p3">
+                <div class="pg-wrap">
+                  <div class="pg-grid">
+                    <img src="artizan-1.jpg" alt="Presentación de Artizan Legacy: descripción del proyecto" loading="lazy" width="720" height="450">
+                    <img src="artizan-2.jpg" alt="Póster 2024 de Artizan Legacy exhibido en la UTCV" loading="lazy" width="720" height="450">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-card frame reveal" style="--d:.26s">
+          <div class="frame-border">
+            <div class="frame-core">
+              <span class="cnr tl"></span><span class="cnr tr"></span><span class="cnr bl"></span><span class="cnr br"></span>
+              <div class="proj-top">
+                <h3 class="proj-name" data-i18n="p4.name">Dashboard Analítico Dual</h3>
+                <span class="proj-status" data-i18n="p4.status">COMPLETADO</span>
+              </div>
+              <p class="proj-tag" data-i18n="p4.tag">WEB + GODOT · REST API</p>
+              <p class="proj-desc" data-i18n="p4.desc">Sistema de analíticas para restaurante: un cliente en Godot envía datos por REST API a un dashboard web con tiempos de preparación y entrega, ingresos por hora, cancelaciones y horas pico.</p>
+              <div class="proj-tags"><span>GODOT</span><span>REST API</span><span>WEB</span><span data-i18n="p4.t4">ANALÍTICA</span></div>
+              <button class="proj-more" aria-expanded="false" aria-controls="gal-p4"><span class="pm-a" data-i18n="proj.more">+ CAPTURAS</span><span class="pm-b" data-i18n="proj.less">− CERRAR</span></button>
+              <div class="proj-gallery" id="gal-p4">
+                <div class="pg-wrap">
+                  <div class="pg-grid">
+                    <img src="dash-1.jpg" alt="Cliente Godot enviando datos a través de la REST API" loading="lazy" width="412" height="258">
+                    <img src="dash-2.jpg" alt="Dashboard web de analíticas del restaurante" loading="lazy" width="384" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 MÓDULOS ============ -->
+  <section class="sec" id="modulos">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">05</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="MÓDULOS" data-i18n="s5.title">MÓDULOS</h2>
+        <span class="sec-read" data-i18n="s5.read">// NEUROMODS_INSTALADOS</span>
+      </header>
+      <div class="mod-grid">
+        <div class="mod reveal" style="--d:.02s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m1.name">Automatización</h3>
+          <p class="mod-desc" data-i18n="m1.desc">Scripts y pipelines que eliminan trabajo repetitivo.</p>
+        </div>
+        <div class="mod reveal" style="--d:.07s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m2.name">Desarrollo de herramientas</h3>
+          <p class="mod-desc" data-i18n="m2.desc">Herramientas a la medida para equipos y procesos.</p>
+        </div>
+        <div class="mod reveal" style="--d:.12s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m3.name">Multiplataforma</h3>
+          <p class="mod-desc" data-i18n="m3.desc">Web, escritorio, móvil y XR con el mismo criterio.</p>
+        </div>
+        <div class="mod reveal" style="--d:.17s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m4.name">Realidad Extendida</h3>
+          <p class="mod-desc" data-i18n="m4.desc">AR y VR aplicadas a productos reales.</p>
+        </div>
+        <div class="mod reveal" style="--d:.22s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m5.name">Flexibilidad</h3>
+          <p class="mod-desc" data-i18n="m5.desc">Cambio de stack, rol o dominio sin fricción.</p>
+        </div>
+        <div class="mod reveal" style="--d:.27s">
+          <div class="mod-top"><span class="mod-node"></span><span class="mod-line"></span><span class="mod-st"><span class="st-a">INSTALLED</span><span class="st-b">ACTIVE</span></span></div>
+          <h3 class="mod-name" data-i18n="m6.name">Diligencia</h3>
+          <p class="mod-desc" data-i18n="m6.desc">Entregas cuidadas, a tiempo y bien documentadas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 EDUCACIÓN ============ -->
+  <section class="sec" id="educacion">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">06</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="EDUCACIÓN" data-i18n="s6.title">EDUCACIÓN</h2>
+        <span class="sec-read" data-i18n="s6.read">// DATOS_ACADÉMICOS</span>
+      </header>
+      <div class="edu-panel reveal" style="--d:.08s">
+        <h3 class="edu-deg" data-i18n="edu.deg">Ing. en Entornos Virtuales y Negocios Digitales</h3>
+        <span class="edu-status" data-i18n="edu.status">COMPLETADO</span>
+        <p class="edu-school" style="flex-basis:100%">Universidad Tecnológica del Centro de Veracruz · 2022 — 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 07 CONTACTO ============ -->
+  <section class="sec" id="contacto">
+    <div class="wrap">
+      <header class="sec-head reveal">
+        <span class="sec-num">07</span><span class="sec-slashes" aria-hidden="true">//</span>
+        <h2 class="sec-title glitch" data-text="CONTACTO" data-i18n="s7.title">CONTACTO</h2>
+        <span class="sec-read" data-i18n="s7.read">// CANAL_ABIERTO</span>
+      </header>
+      <div class="frame reveal" style="--d:.08s">
+        <div class="frame-border">
+          <div class="frame-core contact-core">
+            <h3 class="contact-title glitch" data-text="¿INICIAMOS TRANSMISIÓN?" data-i18n="ct.title">¿INICIAMOS TRANSMISIÓN?</h3>
+            <p class="contact-sub" data-i18n="ct.sub">Disponible para roles de desarrollo, proyectos freelance y colaboraciones.</p>
+            <a class="mail-link decrypt" href="mailto:elroberuwu@gmail.com">elroberuwu@gmail.com</a>
+            <div class="contact-row no-print">
+              <a class="btn decrypt" href="https://github.com/CLOVERFE" target="_blank" rel="noopener noreferrer"><span>GITHUB ↗</span></a>
+              <a class="btn decrypt" href="https://www.instagram.com/el_rover_xd" target="_blank" rel="noopener noreferrer"><span>INSTAGRAM ↗</span></a>
+              <a class="btn solid" href="Jose_Roberto_Blanco_CV.pdf" download><span data-i18n="btn.pdf">DESCARGAR CV</span></a>
+            </div>
+            <p class="print-links print-only">GITHUB: github.com/CLOVERFE — INSTAGRAM: @el_rover_xd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <span>© 2026 JOSE ROBERTO BLANCO PULIDO</span>
+      <span data-i18n="ft.made">HECHO A MANO · UN SOLO ARCHIVO HTML</span>
+      <span>SYS.VER 2.6.0 // VERACRUZ, MX</span>
+    </div>
+  </footer>
+</main>
+
+<script>
+(function(){
+  'use strict';
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ============ I18N ============ */
+  var DICT = {
+    es: {
+      'skip':'Saltar al contenido',
+      'nav.home':'INICIO','nav.profile':'PERFIL','nav.stack':'STACK','nav.exp':'EXPERIENCIA',
+      'nav.proj':'PROYECTOS','nav.mods':'MÓDULOS','nav.edu':'EDUCACIÓN','nav.contact':'CONTACTO',
+      'btn.pdf':'DESCARGAR CV',
+      'hero.kicker':'Desarrollador de Software',
+      'hero.rolestatic':'WEB · MÓVIL · ESCRITORIO · XR · VIDEOJUEGOS',
+      'hero.c1k':'STATUS','hero.c1v':'DISPONIBLE','hero.c2k':'BASE','hero.c3k':'EXP','hero.c3v':'2+ AÑOS',
+      'hero.cta1':'INICIAR CONTACTO','hero.cta2':'VER PROYECTOS',
+      'hero.av1':'CLASE: <b>DEV</b>',
+      's1.title':'PERFIL','s1.read':'// QUIÉN_SOY',
+      's2.title':'STACK','s2.read':'// CARGA_TÉCNICA',
+      's3.title':'EXPERIENCIA','s3.read':'// REGISTRO_MISIONES',
+      's4.title':'PROYECTOS','s4.read':'// ARCHIVOS',
+      's5.title':'MÓDULOS','s5.read':'// NEUROMODS_INSTALADOS',
+      's6.title':'EDUCACIÓN','s6.read':'// DATOS_ACADÉMICOS',
+      's7.title':'CONTACTO','s7.read':'// CANAL_ABIERTO',
+      'profile.p1':'Desarrollador de software con más de 2 años construyendo productos que cruzan fronteras de plataforma: <strong>aplicaciones web, apps móviles de realidad aumentada, software de escritorio, videojuegos y laboratorios virtuales</strong>. Convierto problemas complejos —desde fórmulas de física hasta procesos de negocio— en herramientas digitales que funcionan. Lideré el desarrollo de una app AR para agricultura y hoy construyo experiencias de aprendizaje en realidad extendida.',
+      'profile.m1':'▸ ING. ENTORNOS VIRTUALES','profile.m2':'▸ MULTIPLATAFORMA','profile.m3':'▸ XR / AR / VR',
+      'x1.role':'Desarrollador Principal — CultivAR','x1.dom':'DOMINIO ▸ MÓVIL / AR',
+      'x1.b1':'Lideré de punta a punta el desarrollo de una app móvil de realidad aumentada para el cuidado de cultivos de tomate.',
+      'x1.b2':'Diseñé la experiencia AR completa: detección de la planta, visualización de datos de cuidado e interfaz de usuario.',
+      'x1.b3':'Tomé las decisiones técnicas del proyecto como desarrollador principal.',
+      'x2.role':'Colaborador de Digitalización de Cobro','x2.dom':'DOMINIO ▸ PROCESOS / DIGITALIZACIÓN',
+      'x2.b1':'Ejecuté en campo la transición del cobro físico al digital durante la modernización del servicio de agua.',
+      'x2.b2':'Operé como persona de confianza responsable del manejo de dinero físico.',
+      'x2.b3':'Acompañé a los usuarios en la adopción del nuevo sistema de cobro digital.',
+      'x3.role':'Desarrollador e Investigador — Laboratorio de Física XR','x3.dom':'DOMINIO ▸ XR / EDUCACIÓN',
+      'x3.b1':'Traduzco fórmulas y conceptos de física a experimentos interactivos para un laboratorio virtual.',
+      'x3.b2':'Desarrollo experiencias de aprendizaje empírico con gafas de realidad extendida.',
+      'x3.b3':'Investigo, prototipo y documento nuevas simulaciones educativas.',
+      'p1.status':'COMPLETADO','p1.tag':'APP MÓVIL AR · AGRICULTURA',
+      'p1.desc':'Realidad aumentada que asiste en el cuidado de plantas de tomate: detecta la planta y despliega información contextual de cuidado en pantalla.',
+      'p2.name':'Laboratorio de Física XR','p2.status':'EN DESARROLLO','p2.tag':'LABORATORIO VIRTUAL · EDUCACIÓN',
+      'p2.desc':'Laboratorio virtual donde las fórmulas se convierten en experimentos interactivos: los alumnos aprenden física de forma empírica con gafas de realidad extendida.',
+      'p2.t4':'SIMULACIÓN',
+      'p3.name':'Artizan Legacy','p3.status':'COMPLETADO','p3.tag':'APP VR · HISTORIA',
+      'p3.desc':'Aplicación de realidad virtual para conversar con figuras históricas, conocer su entorno y sus obras. Exhibida en la UTCV en 2024.',
+      'p3.t4':'NARRATIVA',
+      'p4.name':'Dashboard Analítico Dual','p4.status':'COMPLETADO','p4.tag':'WEB + GODOT · REST API',
+      'p4.desc':'Sistema de analíticas para restaurante: un cliente en Godot envía datos por REST API a un dashboard web con tiempos de preparación y entrega, ingresos por hora, cancelaciones y horas pico.',
+      'p4.t4':'ANALÍTICA',
+      'proj.more':'+ CAPTURAS','proj.less':'− CERRAR',
+      'ui.night':'☾ NOCHE','ui.day':'☀ DÍA',
+      'm1.name':'Automatización','m1.desc':'Scripts y pipelines que eliminan trabajo repetitivo.',
+      'm2.name':'Desarrollo de herramientas','m2.desc':'Herramientas a la medida para equipos y procesos.',
+      'm3.name':'Multiplataforma','m3.desc':'Web, escritorio, móvil y XR con el mismo criterio.',
+      'm4.name':'Realidad Extendida','m4.desc':'AR y VR aplicadas a productos reales.',
+      'm5.name':'Flexibilidad','m5.desc':'Cambio de stack, rol o dominio sin fricción.',
+      'm6.name':'Diligencia','m6.desc':'Entregas cuidadas, a tiempo y bien documentadas.',
+      'edu.deg':'Ing. en Entornos Virtuales y Negocios Digitales','edu.status':'COMPLETADO',
+      'ct.title':'¿INICIAMOS TRANSMISIÓN?','ct.sub':'Disponible para roles de desarrollo, proyectos freelance y colaboraciones.',
+      'ft.made':'HECHO A MANO · UN SOLO ARCHIVO HTML',
+      'boot':'INICIANDO SISTEMA_'
+    },
+    en: {
+      'skip':'Skip to content',
+      'nav.home':'HOME','nav.profile':'PROFILE','nav.stack':'STACK','nav.exp':'EXPERIENCE',
+      'nav.proj':'PROJECTS','nav.mods':'MODULES','nav.edu':'EDUCATION','nav.contact':'CONTACT',
+      'btn.pdf':'DOWNLOAD CV',
+      'hero.kicker':'Software Developer',
+      'hero.rolestatic':'WEB · MOBILE · DESKTOP · XR · GAMES',
+      'hero.c1k':'STATUS','hero.c1v':'AVAILABLE','hero.c2k':'BASE','hero.c3k':'EXP','hero.c3v':'2+ YRS',
+      'hero.cta1':'START CONTACT','hero.cta2':'VIEW PROJECTS',
+      'hero.av1':'CLASS: <b>DEV</b>',
+      's1.title':'PROFILE','s1.read':'// WHO_I_AM',
+      's2.title':'STACK','s2.read':'// TECH_LOADOUT',
+      's3.title':'EXPERIENCE','s3.read':'// MISSION_LOG',
+      's4.title':'PROJECTS','s4.read':'// ARCHIVES',
+      's5.title':'MODULES','s5.read':'// NEUROMODS_INSTALLED',
+      's6.title':'EDUCATION','s6.read':'// ACADEMIC_DATA',
+      's7.title':'CONTACT','s7.read':'// OPEN_CHANNEL',
+      'profile.p1':'Software developer with 2+ years building products that cross platform boundaries: <strong>web apps, augmented reality mobile apps, desktop software, videogames, and virtual labs</strong>. I turn complex problems —from physics formulas to business processes— into digital tools that work. I led the development of an AR agriculture app and currently build extended-reality learning experiences.',
+      'profile.m1':'▸ VIRTUAL ENVIRONMENTS ENG.','profile.m2':'▸ CROSS-PLATFORM','profile.m3':'▸ XR / AR / VR',
+      'x1.role':'Lead Developer — CultivAR','x1.dom':'DOMAIN ▸ MOBILE / AR',
+      'x1.b1':'Led end-to-end development of an augmented reality mobile app for tomato crop care.',
+      'x1.b2':'Designed the full AR experience: plant detection, care-data visualization, and user interface.',
+      'x1.b3':'Owned the project\u2019s technical decisions as lead developer.',
+      'x2.role':'Payments Digitalization Collaborator','x2.dom':'DOMAIN ▸ OPERATIONS / DIGITALIZATION',
+      'x2.b1':'Executed in the field the transition from cash to digital payments during the water service modernization.',
+      'x2.b2':'Operated as a trusted person responsible for handling physical cash.',
+      'x2.b3':'Guided users through the adoption of the new digital payment system.',
+      'x3.role':'Developer & Researcher — XR Physics Lab','x3.dom':'DOMAIN ▸ XR / EDUCATION',
+      'x3.b1':'Translate physics formulas and concepts into interactive experiments for a virtual lab.',
+      'x3.b2':'Build hands-on learning experiences powered by extended-reality headsets.',
+      'x3.b3':'Research, prototype, and document new educational simulations.',
+      'p1.status':'COMPLETED','p1.tag':'AR MOBILE APP · AGRICULTURE',
+      'p1.desc':'Augmented reality that assists tomato plant care: detects the plant and displays contextual care information on screen.',
+      'p2.name':'XR Physics Lab','p2.status':'IN DEVELOPMENT','p2.tag':'VIRTUAL LAB · EDUCATION',
+      'p2.desc':'A virtual lab where formulas become interactive experiments: students learn physics hands-on with extended-reality headsets.',
+      'p2.t4':'SIMULATION',
+      'p3.name':'Artizan Legacy','p3.status':'COMPLETED','p3.tag':'VR APP · HISTORY',
+      'p3.desc':'Virtual reality app to converse with historical figures, exploring their environment and their works. Showcased at UTCV in 2024.',
+      'p3.t4':'NARRATIVE',
+      'p4.name':'Dual Analytics Dashboard','p4.status':'COMPLETED','p4.tag':'WEB + GODOT · REST API',
+      'p4.desc':'Restaurant analytics system: a Godot client sends data via REST API to a web dashboard with prep and delivery times, hourly revenue, cancellations, and peak hours.',
+      'p4.t4':'ANALYTICS',
+      'proj.more':'+ SCREENSHOTS','proj.less':'− CLOSE',
+      'ui.night':'☾ NIGHT','ui.day':'☀ DAY',
+      'm1.name':'Automation','m1.desc':'Scripts and pipelines that eliminate repetitive work.',
+      'm2.name':'Tool Development','m2.desc':'Custom tools for teams and processes.',
+      'm3.name':'Cross-platform','m3.desc':'Web, desktop, mobile, and XR with the same standards.',
+      'm4.name':'Extended Reality','m4.desc':'AR and VR applied to real products.',
+      'm5.name':'Flexibility','m5.desc':'Switching stack, role, or domain without friction.',
+      'm6.name':'Diligence','m6.desc':'Careful, on-time, well-documented deliveries.',
+      'edu.deg':'B.Eng. in Virtual Environments & Digital Business','edu.status':'COMPLETED',
+      'ct.title':'START TRANSMISSION?','ct.sub':'Available for development roles, freelance projects, and collaborations.',
+      'ft.made':'HAND-BUILT · ONE SINGLE HTML FILE',
+      'boot':'SYSTEM BOOT_'
+    }
+  };
+  var ROLES = {
+    es:['WEB','MÓVIL','ESCRITORIO','XR','VIDEOJUEGOS'],
+    en:['WEB','MOBILE','DESKTOP','XR','GAMES']
+  };
+  var lang = 'es';
+  try{ lang = localStorage.getItem('cv-lang') || 'es'; }catch(e){}
+  if(!DICT[lang]) lang = 'es';
+
+  var langBtn = document.getElementById('langToggle');
+  function setLang(l){
+    lang = l;
+    document.documentElement.lang = l;
+    var d = DICT[l];
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.getAttribute('data-i18n');
+      if(d[k] != null) el.innerHTML = d[k];
+    });
+    document.querySelectorAll('.glitch').forEach(function(g){
+      g.setAttribute('data-text', g.textContent.trim());
+    });
+    var bt = document.getElementById('bootTxt');
+    if(bt) bt.textContent = d['boot'];
+    langBtn.textContent = (l === 'es') ? 'EN' : 'ES';
+    try{ localStorage.setItem('cv-lang', l); }catch(e){}
+    updateThemeBtn();
+  }
+  langBtn.addEventListener('click', function(){
+    setLang(lang === 'es' ? 'en' : 'es');
+  });
+
+  /* ============ SCRAMBLE (decrypt) ============ */
+  var CH = '!<>-_\\/[]{}=+*^?#01';
+  function scramble(el, target, dur){
+    if(reduce){ el.textContent = target; return; }
+    dur = dur || 450;
+    var start = performance.now();
+    function frame(t){
+      var p = Math.min(1,(t - start)/dur), out = '';
+      for(var i = 0; i < target.length; i++){
+        out += (i / target.length < p) ? target[i] : CH[(Math.random()*CH.length)|0];
+      }
+      el.textContent = out;
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  document.querySelectorAll('.decrypt').forEach(function(el){
+    var target = el.querySelector('span') || el;
+    var orig = target.textContent;
+    el.addEventListener('mouseenter', function(){
+      if(target._busy) return;
+      target._busy = true;
+      scramble(target, orig, 420);
+      setTimeout(function(){ target._busy = false; }, 460);
+    });
+  });
+
+  /* ============ ROLE ROTATOR ============ */
+  var roleEl = document.getElementById('roleWord');
+  var rIdx = 0;
+  setInterval(function(){
+    var words = ROLES[lang];
+    rIdx = (rIdx + 1) % words.length;
+    scramble(roleEl, words[rIdx], 500);
+  }, 2500);
+
+  /* ============ BOOT ============ */
+  var boot = document.getElementById('boot');
+  if(reduce){
+    boot.parentNode.removeChild(boot);
+  } else {
+    setTimeout(function(){
+      boot.classList.add('off');
+      setTimeout(function(){ if(boot.parentNode) boot.parentNode.removeChild(boot); }, 420);
+    }, 950);
+  }
+
+  /* ============ REVEAL OBSERVER ============ */
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('on'); });
+  }
+
+  /* ============ NAV ACTIVE ============ */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a.nl'));
+  var secs = Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  if('IntersectionObserver' in window){
+    var nio = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id = en.target.id;
+          navLinks.forEach(function(a){
+            a.setAttribute('aria-current', a.getAttribute('href') === '#' + id ? 'true' : 'false');
+          });
+        }
+      });
+    }, {rootMargin:'-40% 0px -55% 0px'});
+    secs.forEach(function(s){ nio.observe(s); });
+  }
+
+  /* ============ PROJECT CARDS (Steam expand) ============ */
+  document.querySelectorAll('.proj-card').forEach(function(card){
+    var btn = card.querySelector('.proj-more');
+    function toggle(){
+      var open = card.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if(open){
+        document.querySelectorAll('.proj-card.open').forEach(function(o){
+          if(o !== card){
+            o.classList.remove('open');
+            o.querySelector('.proj-more').setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+    }
+    btn.addEventListener('click', function(e){ e.stopPropagation(); toggle(); });
+    card.addEventListener('click', function(){ toggle(); });
+  });
+
+  /* ============ THEME (modo noche) ============ */
+  var themeBtn = document.getElementById('themeToggle');
+  var theme = 'day';
+  try{
+    theme = localStorage.getItem('cv-theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  }catch(e){}
+  function updateThemeBtn(){
+    if(themeBtn) themeBtn.textContent = DICT[lang][theme === 'night' ? 'ui.day' : 'ui.night'];
+  }
+  function applyTheme(t){
+    theme = t;
+    document.documentElement.setAttribute('data-theme', t);
+    try{ localStorage.setItem('cv-theme', t); }catch(e){}
+    updateThemeBtn();
+  }
+  themeBtn.addEventListener('click', function(){
+    var next = theme === 'night' ? 'day' : 'night';
+    if(reduce){ applyTheme(next); return; }
+    var f = document.createElement('div');
+    f.className = 'theme-flash';
+    document.body.appendChild(f);
+    setTimeout(function(){ applyTheme(next); }, 130);
+    setTimeout(function(){ if(f.parentNode) f.parentNode.removeChild(f); }, 420);
+  });
+  applyTheme(theme);
+
+  /* ============ INIT ============ */
+  setLang(lang);
+})();
+</script>
+</body>
+</html>
