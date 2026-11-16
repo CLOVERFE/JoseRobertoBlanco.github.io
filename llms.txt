@@ -1,0 +1,33 @@
+# Jose Roberto Blanco Pulido
+
+> Junior Software Developer | Web, Mobile and Desktop | JavaScript, Python, C#. Recent Virtual Environments and Digital Business engineering graduate with 2+ years of experience building web, mobile and desktop software. I work with JavaScript, TypeScript, Python, C# and Kotlin, integrate services through REST APIs, and build tools and automations that remove repetitive work. I was lead developer of an Android app delivered end to end and built a web analytics system connected through a REST API. I adapt quickly to new languages, teams and domains, and I am looking for a junior developer position at an IT company. I am looking for a junior developer position at an IT company. Also available for freelance projects and collaborations. Location: Veracruz, Mexico. Contact: elroberuwu@gmail.com.
+
+This site is the personal portfolio and résumé of Jose Roberto Blanco Pulido. Content is available in Spanish (default) and English. The files below contain the same information as the web pages in plain, structured formats.
+
+## Résumé
+
+- [Résumé in English (Markdown)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/cv.en.md): full résumé as plain Markdown
+- [CV en español (Markdown)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/cv.md): currículum completo en Markdown
+- [JSON Resume](https://cloverfe.github.io/JoseRobertoBlanco.github.io/resume.json): structured data following the jsonresume.org schema
+- [ATS résumé, English (PDF)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/cv/Jose_Roberto_Blanco_CV_ATS_EN.pdf): single-column, text-based PDF
+- [CV para ATS, español (PDF)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/cv/Jose_Roberto_Blanco_CV_ATS_ES.pdf): PDF de texto en una columna
+
+## Projects
+
+- [Dual Analytics Dashboard](https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#dash): Restaurant analytics system: a Godot client sends data through a REST API to a web dashboard showing preparation and delivery times, hourly revenue, cancellations and peak hours. Stack: REST API, web development, data analytics, Godot.
+- [CultivAR](https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#cultivar): Augmented reality that assists with tomato plant care: it detects the plant and shows care information in context on screen. Stack: C#, Unity, ARCore, Android.
+- [Virtual Physics Lab](https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#vpl): A virtual lab where formulas become interactive experiments: students learn physics hands-on with extended reality headsets. Stack: C#, Unity, OpenXR.
+- [Artizan Legacy](https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#legacy): Virtual reality app to talk with historical figures and explore their surroundings and their work. Exhibited at Universidad Tecnológica del Centro de Veracruz (UTCV) in 2024. Stack: C#, Unity, virtual reality (VR).
+
+## Pages
+
+- [Portafolio (español)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/): página principal
+- [Portfolio (English)](https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/): English version
+
+## Key facts
+
+- Role sought: junior software developer (web, mobile or desktop) at any kind of IT company; open to any sector
+- Core skills: JavaScript, TypeScript, Python, C#, Kotlin, HTML, CSS; Web development, REST API, Android, Flutter, desktop applications; Unity, Godot, ARCore, OpenXR, AR/VR
+- Experience: 2+ years (Grupo Ziram 2025 – 2026, Servicios de Agua Homex 2024, Artizan 2023)
+- Education: B.Eng. in Virtual Environments and Digital Business (Ingeniería en Entornos Virtuales y Negocios Digitales), Universidad Tecnológica del Centro de Veracruz (UTCV), 2022 – 2026
+- GitHub: https://github.com/CLOVERFE
