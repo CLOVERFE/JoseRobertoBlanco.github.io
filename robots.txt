@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cloverfe.github.io/JoseRobertoBlanco.github.io/sitemap.xml

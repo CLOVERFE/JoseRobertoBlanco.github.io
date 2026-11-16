@@ -1,0 +1,186 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Jose Roberto Blanco Pulido",
+    "label": "Junior Software Developer | Web, Mobile and Desktop | JavaScript, Python, C#",
+    "email": "elroberuwu@gmail.com",
+    "url": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/",
+    "summary": "Recent Virtual Environments and Digital Business engineering graduate with 2+ years of experience building web, mobile and desktop software. I work with JavaScript, TypeScript, Python, C# and Kotlin, integrate services through REST APIs, and build tools and automations that remove repetitive work. I was lead developer of an Android app delivered end to end and built a web analytics system connected through a REST API. I adapt quickly to new languages, teams and domains, and I am looking for a junior developer position at an IT company.",
+    "image": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/assets/img/jose-roberto-blanco.jpg",
+    "location": {
+      "region": "Veracruz",
+      "countryCode": "MX"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "CLOVERFE",
+        "url": "https://github.com/CLOVERFE"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Grupo Ziram",
+      "position": "Software Developer and Researcher",
+      "startDate": "2025",
+      "endDate": "2026",
+      "highlights": [
+        "Built a virtual physics lab in C#: an interactive 3D application (Unity, OpenXR) where students learn hands-on.",
+        "Turned complex requirements, physics formulas and concepts, into working interactive simulations.",
+        "Researched, prototyped and documented each new simulation."
+      ],
+      "summary": "Technologies: C#, Unity, OpenXR"
+    },
+    {
+      "name": "Servicios de Agua Homex",
+      "position": "Payment Digitalization Collaborator",
+      "startDate": "2024",
+      "endDate": "2024",
+      "highlights": [
+        "Ran the payment desk during the water service's migration from cash to digital payments.",
+        "Guided users through adoption of the new digital system and was the trusted person for cash handling."
+      ]
+    },
+    {
+      "name": "Artizan",
+      "position": "Lead Developer, CultivAR mobile app",
+      "startDate": "2023",
+      "endDate": "2023",
+      "highlights": [
+        "Led end-to-end development of CultivAR, an Android mobile app that assists with tomato crop care.",
+        "Designed and implemented the user interface and the augmented reality feature: plant detection and care data.",
+        "Owned the technical decisions of the project as lead developer."
+      ],
+      "summary": "Technologies: C#, Unity, ARCore, Android"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Tecnológica del Centro de Veracruz (UTCV)",
+      "area": "Virtual Environments and Digital Business",
+      "studyType": "Engineering degree (Ingeniería)",
+      "startDate": "2022",
+      "endDate": "2026"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C#",
+        "Kotlin",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Web and mobile",
+      "keywords": [
+        "Web development",
+        "REST API",
+        "Android",
+        "Flutter",
+        "desktop applications"
+      ]
+    },
+    {
+      "name": "3D and extended reality",
+      "keywords": [
+        "Unity",
+        "Godot",
+        "ARCore",
+        "OpenXR",
+        "AR/VR"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Git",
+        "OpenCode",
+        "K3"
+      ]
+    },
+    {
+      "name": "Strengths",
+      "keywords": [
+        "Automation",
+        "tool development",
+        "prototyping",
+        "technical documentation",
+        "adaptability"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Dual Analytics Dashboard",
+      "description": "Restaurant analytics system: a Godot client sends data through a REST API to a web dashboard showing preparation and delivery times, hourly revenue, cancellations and peak hours.",
+      "keywords": [
+        "REST API",
+        "web development",
+        "data analytics",
+        "Godot"
+      ],
+      "roles": [
+        "Development of the Godot client, the REST API integration and the web dashboard."
+      ],
+      "type": "Web analytics application with a REST API",
+      "url": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#dash"
+    },
+    {
+      "name": "CultivAR",
+      "description": "Augmented reality that assists with tomato plant care: it detects the plant and shows care information in context on screen.",
+      "keywords": [
+        "C#",
+        "Unity",
+        "ARCore",
+        "Android"
+      ],
+      "roles": [
+        "Lead developer: I led the project end to end, designed the interface and the augmented reality feature, and made the technical decisions."
+      ],
+      "type": "Android mobile app with augmented reality",
+      "url": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#cultivar"
+    },
+    {
+      "name": "Virtual Physics Lab",
+      "description": "A virtual lab where formulas become interactive experiments: students learn physics hands-on with extended reality headsets.",
+      "keywords": [
+        "C#",
+        "Unity",
+        "OpenXR"
+      ],
+      "roles": [
+        "Developer and researcher at Grupo Ziram: I translated the formulas into simulations, prototyped them and documented each one."
+      ],
+      "type": "Educational 3D application for XR headsets",
+      "url": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#vpl"
+    },
+    {
+      "name": "Artizan Legacy",
+      "description": "Virtual reality app to talk with historical figures and explore their surroundings and their work. Exhibited at Universidad Tecnológica del Centro de Veracruz (UTCV) in 2024.",
+      "keywords": [
+        "C#",
+        "Unity",
+        "virtual reality (VR)"
+      ],
+      "roles": [
+        "Development of the application with Unity and C#. It was exhibited to the public at UTCV in 2024."
+      ],
+      "type": "Interactive virtual reality application",
+      "url": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/en/#legacy"
+    }
+  ],
+  "meta": {
+    "canonical": "https://cloverfe.github.io/JoseRobertoBlanco.github.io/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-11-16T00:00:00",
+    "language": "en",
+    "note": "Spanish version: https://cloverfe.github.io/JoseRobertoBlanco.github.io/cv.md"
+  }
+}
